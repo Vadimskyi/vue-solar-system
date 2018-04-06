@@ -1,0 +1,430 @@
+/* complectation and pricing     start */
+
+#complectation-pricing-app {
+    font-family: 'Roboto Medium';
+    font-size: .8em;
+    font-weight: 600;
+    width: 1024px;
+    height: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    color: #3b3f45;
+    -webkit-text-fill-color: #3b3f45;
+    /*display:flex;*/
+  }
+  
+  #complectation-pricing-app-title {
+    font-family: 'Bebas Neue Regular';
+    font-size: 2.8em;
+    font-weight: lighter;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    letter-spacing: 1px;
+  }
+  
+  .complectation-panels {
+    width: 100%;
+    height: 740px;
+  }
+  
+  .pricing-panel {
+    float: left;
+    width: 30%;
+    height: 650px;
+    margin-top: 4%;
+    margin-right: 4%;
+    -webkit-transition: width .5s ease-in-out;
+    -moz-transition: width .5s ease-in-out;
+    -ms-transition: width .5s ease-in-out;
+    -o-transition: width .5s ease-in-out;
+    transition: width .5s ease-in-out;
+    border: solid 1px #a1a1a1;
+    background-color: #fff;
+  }
+  
+  .selected-panel {
+    width: 32%;
+    height: 700px;
+    margin-top: 1.5%;
+    -webkit-transition: width .5s ease-in-out;
+    -moz-transition: width .5s ease-in-out;
+    -ms-transition: width .5s ease-in-out;
+    -o-transition: width .5s ease-in-out;
+    transition: width .5s ease-in-out;
+    border: 0;
+    background: #fdc300;
+  }
+  
+  .pricing-panel:last-child {
+    margin-right: 0;
+  }
+  
+  .pricing-panel .body {
+    height: 73.6%;
+    padding: 10%;
+    background-color: #fff;
+  }
+  
+  .selected-panel .body {
+    height: 77.7%;
+    margin-right: .8%;
+    margin-left: .8%;
+  }
+  
+  .pricing-panel .header {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: solid 1px #a1a1a1;
+    background-color: #efefef;
+  }
+  
+  .selected-panel .header {
+    height: 22%;
+    border: 0;
+    background-color: #fdc300;
+  }
+  
+  .pricing-panel .header .header-top,
+  .pricing-panel .header .header-bot {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .pricing-panel .header .header-bot {
+    width: 100%;
+    height: 50%;
+  }
+  
+  .pricing-panel .header .header-top div:first-child {
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 6%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #fdc300;
+  }
+  
+  .selected-panel .header .header-top div:first-child {
+    background-color: #fff;
+  }
+  
+  .pricing-panel .header div:first-child img {
+    position: relative;
+    /*filter: opacity(.5) drop-shadow(0 0 0 #fdc300);*/
+    width: 20px;
+    height: 20px;
+    margin-top: 17%;
+  }
+  
+  .pricing-panel .header .header-bot p {
+    font-family: 'Bebas Neue Regular';
+    font-size: 2.5em;
+    margin-top: 2%;
+  }
+  
+  .selected-panel .header .header-bot p {
+    font-size: 2.7em;
+    margin-top: 2.5%;
+  }
+  
+  .pricing-panel .flex-row.info {
+    position: relative;
+    height: 50px;
+    word-wrap: break-word;
+    border-bottom: solid 1px #eaebec;
+  }
+  
+  .pricing-panel  .flex-row.info.last {
+    border-bottom: 0;
+  }
+  
+  .flex-row.info .pricingTextFields {
+    font-size: 1.1em;
+    line-height: 50px;
+    margin: 0 auto;
+  }
+  
+  .pricing-panel .label {
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .flex-row.info.empty {
+    border: 0;
+  }
+  
+  .pricing-panel .body p.label-value.center-align {
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: -1%;
+    color: #939496;
+    -webkit-text-fill-color: #939496;
+  }
+  
+  .pricing-panel .pricing-panel-summary {
+    height: 35%;
+    padding: 15%;
+  }
+  
+  .selected-panel  .pricing-panel-summary {
+    height: 32%;
+  }
+  
+  .price p,
+  .ratio p {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .details .button,
+  .select .button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .select .button {
+    background-color: #fdc300;
+  }
+  
+  .select span {
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative;
+    top: 32%;
+    color: #005096;
+    -webkit-text-fill-color: #005096;
+  }
+  
+  .label-value,
+  .details span {
+    font-weight: normal;
+    text-align: left;
+    color: #62656a;
+    -webkit-text-fill-color: #62656a;
+  }
+  
+  .details span {
+    font-size: 1em;
+    font-weight: bold;
+    position: relative;
+    top: 32%;
+    text-align: center;
+    color: #005096;
+    -webkit-text-fill-color: #005096;
+  }
+  
+  .flex-row.price {
+    margin-top: -10px;
+  }
+  
+  .flex-row.ratio {
+    position: relative;
+    top: 30px;
+    height: 40px;
+  }
+  
+  .price p {
+    font-family: 'Bebas Neue Bold';
+    font-size: 2.4em;
+    letter-spacing: 1px;
+    color: #005096;
+    -webkit-text-fill-color: #005096;
+  }
+  
+  .ratio p {
+    font-family: 'Bebas Neue Regular';
+    font-size: 1.6em;
+    letter-spacing: 1px;
+  }
+  
+  .pricing-details {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+  }
+  
+  
+  
+  .pricing-details .flex-row {
+    height: 50px;
+    margin-top: .2%;
+    padding-top: 0;
+    line-height: 50px;
+    border-color: #dadbdc;
+    background: #f6f6f6;
+  }
+  
+  .pricing-details .flex-row .flex-cell {
+    padding-top: 0;
+  }
+  
+  .checkmark {
+    margin: auto;
+  }
+  
+  .pricing-details .flex-row .flex-cell.flex-auto-cell.left-align.no-border {
+    /*margin-top: 6px;*/
+  }
+  
+  .pricing-details .flex-row .flex-text.label {
+    font-size: 1.4em;
+  }
+  
+  .pricing-details .small-info-text {
+    font-size: 1.3em;
+    font-weight: normal;
+    color: #7d7d7d;
+    -webkit-text-fill-color: #7d7d7d;
+  }
+  
+  .pricing-details-checkmark {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-image: url('../img/checkmark.png');
+    background-repeat: no-repeat;
+  }
+  
+  .pricing-details p:first-child {
+    font-family: 'Bebas Neue Regular';
+    font-size: 2.4em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+  
+  #pricing-summary {
+    font-size: 1.25em;
+    font-weight: normal;
+    line-height: 95px;
+    width: 100%;
+    height: 100px;
+    letter-spacing: 1px;
+    color: #fff;
+    background-image: url('../img/summaryBackBig.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-text-fill-color: #fff;
+  }
+  
+  #pricing-summary div {
+    line-height: normal;
+    display: inline-block;
+  }
+  
+  #pricing-summary .grand-total {
+    line-height: 22px;
+    width: unset;
+    width: unset;
+    height: 45px;
+    margin-left: 10px;
+    padding: 10px;
+    vertical-align: unset;
+    vertical-align: unset;
+    font-family: "Roboto Light";
+    font-weight: bold;
+  }
+  
+  #pricing-summary .flex-row {
+    margin-top: 10px;
+  }
+  
+  #pricing-summary .grand-cell {
+    font-family: 'Roboto Light';
+    font-size: 1.3em;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+  }
+  
+  #pricing-summary .grand-cell div {
+    line-height: 3.5;
+    height: 100%;
+    vertical-align: unset;
+  }
+  
+  #pricing-summary .grand-cell div:first-child {
+    width: 60%;
+    margin-left: 40px;
+  }
+  
+  #pricing-summary .grand-cell div:last-child {
+    width: 5%;
+  }
+  
+  #pricing-summary .grand-cell .grand-total {
+    line-height: unset;
+    width: unset;
+    margin: 5px;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  #pricing-summary .grand-cell .grand-total.first {
+    margin-left: -40px;
+  }
+  
+  #pricing-summary .grand-cell .grand-total span {
+    line-height: unset;
+    position: relative;
+    top: 5px;
+  }
+  
+  #pricing-summary .grand-cell div:first-child span {
+    vertical-align: unset;
+  }
+  
+  .grandSummary .grand-cell {
+    line-height: 45px;
+    height: 50px;
+  }
+  
+  .grandSummary .grand-cell span {
+    font-family: 'Roboto Light';
+    font-size: 1.1em;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .grandSummary .grand-cell .grand-total span {
+    font-size: 1.2em;
+  }
+  
+  .complectation-overlay.details .pricing-details-checkmark {
+    position: relative;
+    float: left;
+    width: 15px;
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 6px;
+    margin-left: 3px;
+    background-image: url('../img/checkmark.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -ms-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+  
+  /* complectation and pricing     end */

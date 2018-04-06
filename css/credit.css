@@ -1,0 +1,137 @@
+/* credit start     */
+
+#credit-app {
+    width: 100%;
+    height: 350px;
+  }
+  
+  #credit-app .credit-back {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/creditBackground.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  
+  #credit-app .two-cols:last-child {
+    margin-top: 20px;
+  }
+  
+  #credit-icon {
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+    width: 140px;
+    height: 88px;
+    background-image: url('../img/creditIcon.png');
+    background-repeat: no-repeat;
+  }
+  
+  #credit-icon-text {
+    font-family: 'Bebas Neue Regular';
+    font-size: 2em;
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fdc300;
+    -webkit-text-fill-color: #fdc300;
+  }
+  
+  #credit-icon-text-descr {
+    font-family: 'Roboto Medium';
+    font-size: 1.3em;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+  }
+  
+  .credit-grid .grid-container {
+    position: relative;
+    width: 800px;
+    margin: 70px auto;
+    padding: 20px;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  
+  .credit-button {
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    background-color: #fdc300;
+  }
+  
+  .credit-button.disabled {
+    background-color: #666;
+  }
+  
+  .complectation-popup .credit-button {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 5px;
+  }
+  
+  .credit-button:hover,
+  .select .button:hover,
+  .details .button:hover {
+    -webkit-box-shadow: #005096 0 0 5px 1px;
+    -moz-box-shadow: #005096 0 0 5px 1px;
+    -ms-box-shadow: #005096 0 0 5px 1px;
+    -o-box-shadow: #005096 0 0 5px 1px;
+    box-shadow: #005096 0 0 5px 1px;
+  }
+  
+  .credit-button span {
+    font-family: 'Roboto Regular';
+    font-size: 1em;
+    position: relative;
+    top: 24%;
+    margin-left: 10px;
+    letter-spacing: .5px;
+    color: #0b2a61;
+    -webkit-text-fill-color: #0b2a61;
+  }
+  
+  .credit-button img {
+    position: relative;
+    top: 30%;
+    margin-left: 5px;
+  }
+  
+  .bank-rules {
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+    width: 100%;
+  }
+  
+  .bank-rules.big {
+    font-size: 1.2em;
+    font-style: normal;
+    text-align: left;
+  }
+  
+  /*credit end        */
